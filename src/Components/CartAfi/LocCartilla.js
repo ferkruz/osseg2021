@@ -73,7 +73,7 @@ const LocCartilla = () => {
   
     }else{
       return (
-          <Container className="col-md-12 bg-primary p-5 heading-section heading-section-white shadow mt-5 mb-5 bg-white">
+          <Container className="col-md-12 bg-primary p-5 heading-section heading-section-white shadow mt-5 mb-5">
               {/*<h5>ProvCartilla</h5>*/}
               <h2 class="mb-6">Localidad</h2>
   

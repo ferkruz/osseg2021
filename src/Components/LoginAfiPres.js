@@ -6,7 +6,7 @@ function LoginAfiPres() {
             <>
 <div className="container">              
 <div className="wrap-appointment d-md-flex">
-        <div className="col-md-8 bg-primary p-5 heading-section heading-section-white shadow p-3 mb-5 bg-white">
+        <div className="col-md-8 bg-primary p-5 heading-section heading-section-white shadow p-3 mb-5">
             <span className="subheading"></span>
             <h2 className="mb-6">Exclusivo AFILIADOS</h2>
             <form action="#" className="appointment">
@@ -42,7 +42,7 @@ function LoginAfiPres() {
                 </div>
         </form>
         </div>
-        <div className="col-md-4 bg-white text-center p-5 shadow p-3 mb-5 bg-white">
+        <div className="col-md-4 text-center p-5 shadow p-3 mb-5">
             <div className="desc border-bottom pb-4">
                 <h2>Línea de Orientación al Afiliado</h2>
             </div>
@@ -53,7 +53,7 @@ function LoginAfiPres() {
         </div>
 </div>	
 <div className="wrap-appointment d-md-flex">
-			<div className="col-md-8 bg-primary p-5 heading-section heading-section-white shadow p-3 mb-5 bg-white">
+			<div className="col-md-8 bg-primary p-5 heading-section heading-section-white shadow p-3 mb-5">
 				<span className="subheading"></span>
 				<h2 className="mb-6">Exclusivo PRESTADORES</h2>
 				<form action="#" className="appointment">
@@ -77,7 +77,7 @@ function LoginAfiPres() {
 					</div>
 				</form>
 			</div>
-			<div className="col-md-4 bg-white text-center p-5 shadow p-3 mb-5 bg-white">
+			<div className="col-md-4 text-center p-5 shadow p-3 mb-5">
 				<div className="desc border-bottom pb-4">
 					<h2>Cobranzas a Empresas</h2>
 				</div>
