@@ -1,5 +1,12 @@
 import React from "react"
+
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+
+import './css/animate.css'
+import './css/flaticon.css'
 import './App.css';
+import './css/style.css'
+
 import {
   BrowserRouter as Router
 } from "react-router-dom"

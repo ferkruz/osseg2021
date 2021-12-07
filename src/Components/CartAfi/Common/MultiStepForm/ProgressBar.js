@@ -4,7 +4,7 @@ import { Badge } from 'react-bootstrap';
 function ProgressBar({ list, selectedIndex }) {
     return (
         <div className="row">
-            <div className="container">
+            <div className="container col-md-12">
                 <div className="l-wizard-h">
                     <ul className="wizard-h">
                         {list.map((item, index) => {
