@@ -73,7 +73,7 @@ const ModCartilla = () => {
   
     }else{
       return (
-          <Container className="col-md-12 bg-primary p-5 heading-section heading-section-white shadow mt-5 mb-5">
+          <Container className="col-md-12 bg-primary p-5 heading-section heading-section-white shadow mt-5 mb-5 bg-white">
               {/*<h5>ProvCartilla</h5>*/}
               <h2 class="mb-6">Modalidad</h2>
   

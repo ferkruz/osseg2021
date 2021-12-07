@@ -180,7 +180,7 @@ const { handleSubmit, unregister, control, register, setError, formState: { erro
     <div className="wrap-appointment d-md-flex ftco-animated fadeInUp ">
     <div className="col-md-12 contact-wrap w-60 p-md-5 p-4"> 
 
-    <div className="col-md-12 bg-primary p-5 heading-section heading-section-white shadow">
+    <div className="col-md-12 bg-primary p-5 heading-section heading-section-white shadow bg-white">
         <span className="subheading"></span>
         <h2 className="mb-6">ALTA PRESTADOR</h2>
 

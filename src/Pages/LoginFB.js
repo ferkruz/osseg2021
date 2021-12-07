@@ -68,7 +68,7 @@ const { handleSubmit, control, formState: { errors } } = useForm({
     <div className="wrap-appointment d-md-flex ftco-animated fadeInUp ">
     <div className="col-md-12 contact-wrap w-60 p-md-5 p-4"> 
 
-    <div className="col-md-12 bg-primary p-5 heading-section heading-section-white shadow fadeInUp ftco-animated pb-5">
+    <div className="col-md-12 bg-primary p-5 heading-section heading-section-white shadow bg-white fadeInUp ftco-animated pb-5">
         <span className="subheading"></span>
         <h2 className="mb-6">LOGIN AFILIADO</h2>
 
