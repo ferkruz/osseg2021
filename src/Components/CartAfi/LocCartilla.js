@@ -11,7 +11,7 @@ import ReactSelect from "react-select";
 const LocCartilla = () => {
 
     const { checkoutDetails, setCheckoutDetails } = useContext(OrderContext); // Context API
-    const [especFB, setespecFB] = React.useState([])
+    const [localFB, setlocalFB] = React.useState([])
     
     const [loading, setLoading] = useState(true)
     const [reload,setReload]=useState(true)
@@ -22,15 +22,29 @@ const LocCartilla = () => {
           })
   
   
-      async function reqPcia(){
+      async function reqLocal(){
           try{
-              const pcia = await firebase.firestore().collection("provincias").orderBy("pcia");
-              pcia.get().then((querySnapshot) => {
-              const pciaFB = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
+              const local = await firebase.firestore().collection("prestadores");
+              local.get().then((querySnapshot) => {
+              const localFB = querySnapshot.docs.map((doc) => ({ Nombre: doc.Nombre, ...doc.data() }))
                   
-                  console.log(pciaFB)
-                  if(pcia){
-                      setespecFB(pciaFB)
+                  console.log(localFB)
+
+                  const sedesFB =localFB.map((doc) => ({ sede: doc.sede }))  
+                  console.log(sedesFB)
+
+                  const localSede=[];
+                  for (var i =0; i<sedesFB.length; i++){ 
+                    for (var j =0; j<sedesFB[i].sede.length; j++){ 
+                      //console.log (i+"-"+j+sedesFB[i].sede[j].local)
+                      if(!localSede.includes(sedesFB[i].sede[j].local)){
+                        localSede.push(sedesFB[i].sede[j].local)  
+                      }
+                    } 
+                  } 
+
+                  if(local){
+                      setlocalFB(localSede)
                       setLoading(false)
                   }
               })
@@ -43,7 +57,7 @@ const LocCartilla = () => {
         
       useEffect(
           ()=>{
-              if(reload)reqPcia()
+              if(reload)reqLocal()
           },[reload]
       )   
     
@@ -73,7 +87,7 @@ const LocCartilla = () => {
   
     }else{
       return (
-          <Container className="col-md-12 bg-primary p-5 heading-section heading-section-white shadow mt-5 mb-5 bg-white">
+          <Container className="col-md-12 bg-primary p-5 heading-section heading-section-white shadow mt-5 mb-5">
               {/*<h5>ProvCartilla</h5>*/}
               <h2 class="mb-6">Localidad</h2>
   
@@ -85,10 +99,10 @@ const LocCartilla = () => {
           placeholder="Seleccionar Localidad"
           //value={especFB.filter(itemFB => itemFB.value === selectedValue)} // set selected value
           
-          options = { especFB.map((itemFB) => {
+          options = { localFB.map((itemFB) => {
               return {
-                value: itemFB.id,
-                label: itemFB.pcia,
+                value: itemFB,
+                label: itemFB,
               };
             })}
           //value={especFB.filter(item0FB => selectedValue.includes(item0FB.value))} // set selected values

@@ -70,6 +70,8 @@ class Home extends Component{
             <>
                 <div  className="ftco-animate fadeInUp ftco-animated">
 
+
+                <CartillaAfi />
                 
                 <CarouselIndex />
                 <LoginAfiPres />

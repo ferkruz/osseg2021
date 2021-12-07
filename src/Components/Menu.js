@@ -1,5 +1,7 @@
 import React from 'react';
-
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 import AuthContext from "../Context/AuthContext";
 
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';

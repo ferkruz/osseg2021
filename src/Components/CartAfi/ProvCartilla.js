@@ -73,7 +73,7 @@ const ProvCartilla = () => {
 
   }else{
     return (
-          <Container className="col-md-11 bg-primary p-5 heading-section heading-section-white shadow mt-0 mb-2 bg-white">
+        <Container className="col-md-12 bg-primary p-5 heading-section heading-section-white shadow mt-5 mb-5">
             {/*<h5>ProvCartilla</h5>*/}
             <h2 class="mb-6">Provincia</h2>
 

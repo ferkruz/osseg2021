@@ -3,6 +3,8 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
+import logo from '../../src/css/images/logoOsseg.png'
+
 import { Container, Row, Col } from 'react-bootstrap';
 
 function InfoHeader() {
@@ -35,8 +37,7 @@ function InfoHeader() {
 	    <Container>
 				<Row className="justify-content-between">
 					<Col className="md-3 mb-md-0 mb-4 d-flex align-items-center">
-						<a className="navbar-brand" href="index.html" style={{
-      backgroundImage: 'url("https://www.osseg.org.ar/images/logo007.png")',backgroundRepeat: "no-repeat"}}>OSSEG OBRA SOCIAL DE SEGUROS</a>
+            <img src={logo} alt="Logo OSSEG"/>
 					</Col>
 					<Col className="md-7">
 						<Row>
